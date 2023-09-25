@@ -5,12 +5,13 @@ export function Welcome() {
   return (
     <>
       <Title className={classes.title} ta="center" mt={100}>
-        Welcome to{' '}
+        Hello,{' '}I'm{' '}
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Mantine
+          Jacob Hines
         </Text>
+        !
       </Title>
-      <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
+      <Text c="sand.2" ta="center" size="lg" maw={580} mx="auto" mt="xl">
         This starter Vite project includes a minimal setup, if you want to learn more on Mantine +
         Vite integration follow{' '}
         <Anchor href="https://mantine.dev/guides/vite/" size="lg">
