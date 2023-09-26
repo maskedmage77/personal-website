@@ -1,8 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8),
+    var(--background)
+  ),
+  url('/background2.png') top center;
+  background-size: cover;
+  scroll-snap-align: start;
+}
+
 .title {
   color: var(--mantine-color-sand-2);
   font-size: rem(100px);
-  font-weight: 900;
-  letter-spacing: rem(-2px);
+  font-weight: 600;
 
   @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(50px);

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
+:root {
+  --background: #3B2033;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
-  background-color: #3B2033;
+  background-color: var(--background);
 }

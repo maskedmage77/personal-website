@@ -5,8 +5,7 @@ export const theme = createTheme({
   headings: {
     fontFamily: 'Varna',
   },
-  primaryColor: "sand",
-
+  primaryColor: "pink",
   colors: {
     gray: [
       "#f5f5f5",
