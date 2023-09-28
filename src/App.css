@@ -8,7 +8,7 @@
 }
 
 :root {
-  --background: #3B2033;
+  --background: var(--mantine-color-dark-8);
   --default-card-background: #2f1928;
   --font-color: var(--mantine-color-sand-2);
 }
