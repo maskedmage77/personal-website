@@ -2,7 +2,6 @@ import { render, screen } from '../../../test-utils';
 import { Welcome } from './Welcome';
 
 describe('Welcome component', () => {
-
   it('renders correctly', () => {
     render(<Welcome />);
 
@@ -20,5 +19,4 @@ describe('Welcome component', () => {
     expect(screen.getByLabelText('Github')).toBeInTheDocument();
     expect(screen.getByLabelText('LinkedIn')).toBeInTheDocument();
   });
-
 });
