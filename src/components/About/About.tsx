@@ -19,6 +19,8 @@ export function About() {
   return (
     <Container mih="100vh" mt="" className={classes.container}>
 
+
+
       <Transition
         mounted={opened}
         transition={'slide-right'}
@@ -27,49 +29,55 @@ export function About() {
         keepMounted
       >
         {(transitionStyle) => (
-          
-          <Card shadow="lg" padding="lg" radius="md" className={classes.card} style={{
-            ...transitionStyle,
-          }}>
+          <>
+            <Title className={classes.title} mb="xl" style={{
+              ...transitionStyle,
+            }}>
+              About Me
+            </Title>
 
-            <Image src="headshot.jpg" alt="Jacob Hines" radius="50%" className={classes.image} />
+            <Card shadow="lg" padding="lg" radius="md" className={classes.card} style={{
+              ...transitionStyle,
+            }}>
 
-            <Stack className={classes.intro} gap="lg" py="md">
-              
-              <Title ta="center" className={classes.title}>
-                About
-              </Title>
+              <Image src="headshot.jpg" alt="Jacob Hines" radius="50%" className={classes.image} />
 
-              <Text size="md"  className={classes.text}>
-                I am a software developer who specializes in creating full-stack mobile and web applications.
-                I utilize a variety of technologies to build responsive, performant, and scalable applications.
-                When I think about software development, I think about the following quote:
-              </Text>
+              <Stack className={classes.intro} gap="lg" py="md">
 
-              <Blockquote
-                cite="– Antoine de Saint-Exupery"
-                icon={<IconInfoCircle/>}
-                classNames={{ icon: classes.blockquote_icon }}
-              >
-                Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
-              </Blockquote>
+                <Text size="md"  className={classes.text}>
+                  I am a software developer who specializes in creating full-stack mobile and web applications.
+                  I utilize a variety of technologies to build responsive, performant, and scalable applications.
+                  When I think about software development, I think about the following quote:
+                </Text>
 
-            </Stack>
+                <Blockquote
+                  cite="– Antoine de Saint-Exupery"
+                  icon={<IconInfoCircle/>}
+                  classNames={{ icon: classes.blockquote_icon }}
+                >
+                  Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
+                </Blockquote>
 
-            <Stack className={classes.continuation}>
-              
-              <Text size="md" className={classes.text}>
-                I am a firm believer in the importance of simplicity and minimalism in software development.
-                Too often, developers rush to get a product out the door, and in doing so, they create 
-                bloated and complex applications that are difficult to maintain and scale. 
-                This act creates what is known as technical debt.
-                I believe that the best software is that which is simple, intuitive, and easy to use.
-              </Text>
+              </Stack>
 
-            </Stack>
-              
-          </Card>
-          
+              <Stack className={classes.continuation}>
+                
+                <Text size="md" className={classes.text}>
+                  I am a firm believer in the importance of simplicity and minimalism in software development.
+                  Too often, developers rush to get a product out the door, and in doing so, they create 
+                  bloated and complex applications that are difficult to maintain and scale. 
+                  This act creates what is known as technical debt.
+                  I believe that the best software is that which is simple, intuitive, and easy to use.
+                </Text>
+
+                <Title>
+
+                </Title>
+
+              </Stack>
+                
+            </Card>
+          </>
         )}
       </Transition>
 

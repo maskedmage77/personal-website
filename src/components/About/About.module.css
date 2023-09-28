@@ -26,7 +26,6 @@
   @media (max-width: $mantine-breakpoint-xs) {
     align-items: center;
     grid-column: 1 / 4;
-
   }
 }
 
@@ -40,10 +39,12 @@
 
 .image {
   z-index: 1;
-  width: 100%;
+  width: calc(100% - (var(--mantine-spacing-md) * 2));
+  margin: var(--mantine-spacing-md);
   flex-grow: 1;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   @media (max-width: $mantine-breakpoint-xs) {
+    margin-bottom: 0;
     flex-grow: 0;
     grid-column: 1 / 4;
   }
