@@ -9,9 +9,9 @@ export default function Header() {
 
       <Group className={classes.left_section}>
 
-        <IconMenu2 size={32} color="#E5E4D0"/>
+        <IconMenu2 size={32} color="var(--font-color)"/>
 
-        <Title order={2} c="#E5E4D0">
+        <Title order={2} c="var(--font-color)">
           Jacob Hines
         </Title>
 
@@ -22,13 +22,13 @@ export default function Header() {
 
       <Group className={classes.center_section} gap={0}>
 
-        <Button className={`${classes.nav_button}, ${classes.selected}`} variant="subtle" size="compact-sm" color="sand.2" >ABOUT</Button>
+        <Button className={`${classes.nav_button}, ${classes.selected}`} variant="subtle" size="compact-sm" color="var(--font-color)" >ABOUT</Button>
 
-        <Button className={classes.nav_button} variant="subtle" size="compact-sm" color="sand.2">EXPERIENCE</Button>
+        <Button className={classes.nav_button} variant="subtle" size="compact-sm" color="var(--font-color)">EXPERIENCE</Button>
 
-        <Button className={classes.nav_button} variant="subtle" size="compact-sm" color="sand.2">PROJECTS</Button>
+        <Button className={classes.nav_button} variant="subtle" size="compact-sm" color="var(--font-color)">PROJECTS</Button>
 
-        <Button className={classes.nav_button} variant="subtle" size="compact-sm" color="sand.2">CONTACT</Button>
+        <Button className={classes.nav_button} variant="subtle" size="compact-sm" color="var(--font-color)">CONTACT</Button>
 
       </Group>
 

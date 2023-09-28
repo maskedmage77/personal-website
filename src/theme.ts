@@ -3,7 +3,7 @@ import { createTheme } from '@mantine/core';
 export const theme = createTheme({
   fontFamily: 'Jost',
   headings: {
-    fontFamily: 'Varna',
+    fontFamily: 'Varna2',
   },
   primaryColor: "pink",
   colors: {
@@ -19,17 +19,29 @@ export const theme = createTheme({
       "#656565",
       "#575757"
     ],
+    // dark : [
+    //   "#c1c1c1",
+    //   "#a6a6a6",
+    //   "#909090",
+    //   "#5c5c5c",
+    //   "#373737",
+    //   "#2c2c2c",
+    //   "#252525",
+    //   "#1a1a1a",
+    //   "#141414",
+    //   "#101010"
+    // ],
     dark : [
-      "#c1c1c1",
-      "#a6a6a6",
-      "#909090",
-      "#5c5c5c",
-      "#373737",
-      "#2c2c2c",
-      "#252525",
-      "#1a1a1a",
-      "#141414",
-      "#101010"
+      '#c4bcc1',
+      '#b0a5ad',
+      '#9d8f99',
+      '#897984',
+      '#756270',
+      '#624c5b',
+      '#4e3647',
+      '#624c5b',
+      '#624c5b',
+      '#23131e'
     ],
     sand: [
       "#f9f7ed",

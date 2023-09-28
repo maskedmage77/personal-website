@@ -2,11 +2,23 @@ import { render, screen } from '../../../test-utils';
 import { Welcome } from './Welcome';
 
 describe('Welcome component', () => {
-  it('has correct Vite guide link', () => {
+
+  it('renders correctly', () => {
     render(<Welcome />);
-    expect(screen.getByText('this guide')).toHaveAttribute(
-      'href',
-      'https://mantine.dev/guides/vite/'
-    );
+
+    // Check if the title is rendered
+    expect(screen.getByText(/Bonjour!/i)).toBeInTheDocument();
+
+    // Check if the text is rendered
+    expect(
+      screen.getByText(
+        /I am a software developer who specializes in creating full-stack applications./i
+      )
+    ).toBeInTheDocument();
+
+    // Check if the social media icons are rendered
+    expect(screen.getByLabelText('Github')).toBeInTheDocument();
+    expect(screen.getByLabelText('LinkedIn')).toBeInTheDocument();
   });
+
 });
