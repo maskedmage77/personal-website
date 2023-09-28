@@ -11,7 +11,7 @@ describe('Welcome component', () => {
     // Check if the text is rendered
     expect(
       screen.getByText(
-        /I am a software developer who specializes in creating full-stack applications./i
+        /I am a software developer who specializes in creating full-stack mobile and web applications./i
       )
     ).toBeInTheDocument();
 
