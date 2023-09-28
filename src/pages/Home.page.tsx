@@ -1,6 +1,7 @@
 import Welcome from "../components/Welcome";
 import Header from "../components/Header";
 import About from "../components/About";
+import Experience from "../components/Experience";
 
 export function HomePage() {
 
@@ -9,6 +10,7 @@ export function HomePage() {
       <Header />
       <Welcome />
       <About />
+      <Experience />
     </>
   );
 }

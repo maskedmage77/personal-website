@@ -7,7 +7,7 @@ describe('Welcome component', () => {
     render(<Welcome />);
 
     // Check if the title is rendered
-    expect(screen.getByText(/Bonjour!/i)).toBeInTheDocument();
+    expect(screen.getByText(/Hello!/i)).toBeInTheDocument();
 
     // Check if the text is rendered
     expect(

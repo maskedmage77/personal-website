@@ -37,9 +37,15 @@
 .nav_button {
   font-weight: 400;
   text-shadow: 0 0 10px #000;
-  /* color: var(--font-color); */
 }
 
 .selected {
   font-weight: 700;
+}
+
+.menu_button {
+  display: none;
+  @media (max-width: $mantine-breakpoint-md) {
+    display: block;
+  }
 }

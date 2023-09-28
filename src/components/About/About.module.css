@@ -8,6 +8,70 @@
   scroll-snap-align: start;
 }
 
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  grid-gap: var(--mantine-spacing-lg);
+  @media (max-width: $mantine-breakpoint-xs) {
+    grid-template-columns: 1fr;
+  }
+  background-color: var(--default-card-background);
+}
+
+.intro {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  @media (max-width: $mantine-breakpoint-xs) {
+    align-items: center;
+    grid-column: 1 / 4;
+
+  }
+}
+
+.continuation {
+  grid-column: 1 / 4;
+}
+
 .text, .title {
   color: var(--font-color);
+}
+
+.image {
+  z-index: 1;
+  width: 100%;
+  flex-grow: 1;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  @media (max-width: $mantine-breakpoint-xs) {
+    flex-grow: 0;
+    grid-column: 1 / 4;
+  }
+  border: 3px solid #0000;
+  background: linear-gradient(
+    var(--default-card-background),
+    var(--default-card-background))
+    padding-box,
+    linear-gradient(
+        var(--angle),
+        var(--mantine-color-pink-7),
+        var(--mantine-color-orange-7)
+      ) border-box;
+  animation: 4s rotate linear infinite;
+}
+
+.blockquote_icon {
+  background-color: var(--default-card-background);
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
