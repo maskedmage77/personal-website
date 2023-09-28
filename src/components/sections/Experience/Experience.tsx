@@ -1,4 +1,5 @@
-import { Badge, Card, Container, Group, SimpleGrid, Text, Title } from '@mantine/core';
+import { Badge, Card, Group, SimpleGrid, Text, Title } from '@mantine/core';
+import { StyledContainer } from '../../elements/StyledContainer';
 import classes from './Experience.module.css';
 
 export function Experience() {
@@ -44,7 +45,7 @@ export function Experience() {
   ];
 
   return (
-    <Container mt="" className={classes.container}>
+    <StyledContainer>
       <Title ta="center" className={classes.title} pb="xl">
         Experience
       </Title>
@@ -92,6 +93,6 @@ export function Experience() {
           </Card>
         ))}
       </SimpleGrid>
-    </Container>
+    </StyledContainer>
   );
 }

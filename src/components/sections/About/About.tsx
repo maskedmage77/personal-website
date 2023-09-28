@@ -1,5 +1,6 @@
-import { Blockquote, Card, Container, Image, Stack, Text, Title } from '@mantine/core';
+import { Blockquote, Card, Image, Stack, Text, Title } from '@mantine/core';
 import { useDebouncedValue, useWindowScroll } from '@mantine/hooks';
+import { StyledContainer } from '../../elements/StyledContainer';
 import { IconInfoCircle } from '@tabler/icons-react';
 import { useEffect, useState } from 'react';
 import classes from './About.module.css';
@@ -16,7 +17,7 @@ export function About() {
   }, [debounced]);
 
   return (
-    <Container mt="" className={classes.container}>
+    <StyledContainer>
       <Title
         className={classes.title}
         mb="xl"
@@ -65,6 +66,6 @@ export function About() {
           <Title></Title>
         </Stack>
       </Card>
-    </Container>
+    </StyledContainer>
   );
 }

@@ -1,0 +1,11 @@
+.text, .title {
+  color: var(--font-color);
+}
+
+.card {
+  width: 100%;
+}
+
+.badge {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}

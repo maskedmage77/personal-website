@@ -1,7 +1,7 @@
 import { ActionIcon, Button, Group, Title } from '@mantine/core';
 import { IconMenu2 } from '@tabler/icons-react';
 import classes from './Header.module.css';
-import { useWindowScrollCount } from '../../hooks/useWindowScrollCount';
+import { useWindowScrollCount } from '../../../hooks/useWindowScrollCount';
 
 export default function Header() {
   const { windowCount } = useWindowScrollCount();

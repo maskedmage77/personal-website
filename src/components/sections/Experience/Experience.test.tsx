@@ -1,4 +1,4 @@
-import { render } from '../../../test-utils';
+import { render } from '../../../../test-utils';
 import { Experience } from './Experience';
 
 test('renders Experience component with correct title', () => {

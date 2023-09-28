@@ -1,7 +1,8 @@
-import Experience from '../components/Experience';
-import Welcome from '../components/Welcome';
-import Header from '../components/Header';
-import About from '../components/About';
+import Experience from '../components/sections/Experience';
+import Projects from '../components/sections/Projects';
+import Welcome from '../components/sections/Welcome';
+import Header from '../components/sections/Header';
+import About from '../components/sections/About';
 
 export function HomePage() {
   return (
@@ -10,6 +11,7 @@ export function HomePage() {
       <Welcome />
       <About />
       <Experience />
+      <Projects />
     </>
   );
 }
