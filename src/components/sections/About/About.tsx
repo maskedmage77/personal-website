@@ -17,7 +17,7 @@ export function About() {
   }, [debounced]);
 
   return (
-    <StyledContainer>
+    <StyledContainer id="about">
       <Title
         className={classes.title}
         mb="xl"

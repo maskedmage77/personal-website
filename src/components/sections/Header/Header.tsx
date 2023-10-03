@@ -1,7 +1,7 @@
-import { ActionIcon, Button, Group, Title } from '@mantine/core';
+import { useWindowScrollCount } from '../../../hooks/useWindowScrollCount';
+import { ActionIcon, Anchor, Group, Title } from '@mantine/core';
 import { IconMenu2 } from '@tabler/icons-react';
 import classes from './Header.module.css';
-import { useWindowScrollCount } from '../../../hooks/useWindowScrollCount';
 
 export default function Header() {
   const { windowCount } = useWindowScrollCount();
@@ -26,42 +26,46 @@ export default function Header() {
         </Title>
       </Group>
 
-      <Group className={classes.center_section} gap={0}>
-        <Button
-          className={`${classes.nav_button} ${classes.selected}`}
+      <Group className={classes.center_section} gap={"md"}>
+        <Anchor
+          className={`${classes.nav_button}`}
           variant="subtle"
           size="compact-sm"
-          color="var(--font-color)"
+          c="var(--font-color)"
+          href="#about"
         >
           ABOUT
-        </Button>
+        </Anchor>
 
-        <Button
+        <Anchor
           className={classes.nav_button}
           variant="subtle"
           size="compact-sm"
-          color="var(--font-color)"
+          c="var(--font-color)"
+          href="#experience"
         >
           EXPERIENCE
-        </Button>
+        </Anchor>
 
-        <Button
+        <Anchor
           className={classes.nav_button}
           variant="subtle"
           size="compact-sm"
-          color="var(--font-color)"
+          c="var(--font-color)"
+          href="#projects"
         >
           PROJECTS
-        </Button>
+        </Anchor>
 
-        <Button
+        <Anchor
           className={classes.nav_button}
           variant="subtle"
           size="compact-sm"
-          color="var(--font-color)"
+          c="var(--font-color)"
+          href="#contact"
         >
           CONTACT
-        </Button>
+        </Anchor>
       </Group>
     </Group>
   );

@@ -45,7 +45,7 @@ export function Experience() {
   ];
 
   return (
-    <StyledContainer>
+    <StyledContainer id="experience">
       <Title ta="center" className={classes.title} pb="xl">
         Experience
       </Title>
@@ -87,7 +87,7 @@ export function Experience() {
 
             <Group gap="sm">
               {experience.technologies.map((technology, index) => (
-                <Badge color="orange" className={classes.badge} key={index}>{technology}</Badge>
+                <Badge color="green" className={classes.badge} key={index}>{technology}</Badge>
               ))}
             </Group>
           </Card>

@@ -9,7 +9,7 @@ export function Welcome() {
         Hello!
         <br />
         I'm{' '}
-        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
+        <Text inherit variant="gradient" component="span" gradient={{ from: 'green', to: 'sand.2' }}>
           Jacob Hines
         </Text>
         !

@@ -119,15 +119,15 @@ export function Projects() {
   ]
 
   return (
-    <StyledContainer>
+    <StyledContainer id="projects">
       <Title className={classes.title} pb="xl">
         Projects
       </Title>
 
       <SimpleGrid
         cols={{ base: 1, sm: 1, lg: 1 }}
-        spacing={{ base: 10, sm: 'sm' }}
-        verticalSpacing={{ base: 'md', sm: 'xl' }}
+        spacing={{ base: 10, sm: 'md' }}
+        verticalSpacing={{ base: 'md', sm: 'md' }}
       >
       {projects.map((project, index) => (
         <Card shadow="sm" p="lg" radius="md" className={classes.card} key={index}>
