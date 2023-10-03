@@ -10,7 +10,7 @@
     rgba(0, 0, 0, 0.8),
     var(--background)
   ),
-  url('/background2.png') top center;
+  url('/background.webp') top center;
   background-size: cover;
 }
 

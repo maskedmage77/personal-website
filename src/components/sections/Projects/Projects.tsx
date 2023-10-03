@@ -16,7 +16,7 @@ export function Projects() {
         'projects/Sparkle/3D.png',
         'projects/Sparkle/4D.png',
         'projects/Sparkle/5D.png',
-        'projects/Sparkle/7D.png',
+        'projects/Sparkle/7L.png',
         'projects/Sparkle/8D.png',
         'projects/Sparkle/9D.png',
         'projects/Sparkle/10D.png',
