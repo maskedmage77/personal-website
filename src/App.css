@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Varna';
-  src: url('fonts/Varna-Regular.otf') format('opentype');
+  src: url(../public/fonts/Varna-Regular.otf) format('opentype');
   font-weight: 400;
   font-style: normal;
 }
