@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <Group className={`${classes.header} ${windowCount >= 1 ? classes.background : ''}`}>
       <Group className={classes.left_section}>
-        <ActionIcon
+        {/* <ActionIcon
           variant="transparent"
           aria-label="Menu"
           size="lg"
@@ -19,7 +19,7 @@ export default function Header() {
           className={classes.menu_button}
         >
           <IconMenu2 size={32} color="var(--font-color)" />
-        </ActionIcon>
+        </ActionIcon> */}
 
         <Title order={2} c="var(--font-color)">
           Jacob Hines
@@ -57,7 +57,7 @@ export default function Header() {
           PROJECTS
         </Anchor>
 
-        <Anchor
+        {/* <Anchor
           className={classes.nav_button}
           variant="subtle"
           size="compact-sm"
@@ -65,7 +65,7 @@ export default function Header() {
           href="#contact"
         >
           CONTACT
-        </Anchor>
+        </Anchor> */}
       </Group>
     </Group>
   );
