@@ -1,6 +1,5 @@
 import { useWindowScrollCount } from '../../../hooks/useWindowScrollCount';
-import { ActionIcon, Anchor, Group, Title } from '@mantine/core';
-import { IconMenu2 } from '@tabler/icons-react';
+import { Anchor, Group, Title } from '@mantine/core';
 import classes from './Header.module.css';
 
 export default function Header() {
@@ -42,9 +41,9 @@ export default function Header() {
           variant="subtle"
           size="compact-sm"
           c="var(--font-color)"
-          href="#experience"
+          href="#experiences"
         >
-          EXPERIENCE
+          EXPERIENCES
         </Anchor>
 
         <Anchor
@@ -57,15 +56,6 @@ export default function Header() {
           PROJECTS
         </Anchor>
 
-        {/* <Anchor
-          className={classes.nav_button}
-          variant="subtle"
-          size="compact-sm"
-          c="var(--font-color)"
-          href="#contact"
-        >
-          CONTACT
-        </Anchor> */}
       </Group>
     </Group>
   );

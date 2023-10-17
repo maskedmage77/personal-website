@@ -9,3 +9,9 @@
 .badge {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
+
+.image {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
