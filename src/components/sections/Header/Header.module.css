@@ -49,3 +49,7 @@
     display: block;
   }
 }
+
+.name {
+  font-family: 'Varna', serif;
+}

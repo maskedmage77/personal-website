@@ -20,7 +20,7 @@ export default function Header() {
           <IconMenu2 size={32} color="var(--font-color)" />
         </ActionIcon> */}
 
-        <Title order={2} c="var(--font-color)">
+        <Title order={2} c="var(--font-color)" className={classes.name}>
           Jacob Hines
         </Title>
       </Group>

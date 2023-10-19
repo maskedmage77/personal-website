@@ -3,7 +3,7 @@ import { createTheme } from '@mantine/core';
 export const theme = createTheme({
   fontFamily: 'Jost',
   headings: {
-    fontFamily: 'Varna',
+    fontFamily: 'Jost',
   },
   primaryColor: 'green',
   colors: {
